@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Poetry Garden</title>
+  <title>Divine Poems</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,14 +11,16 @@
       padding: 0;
       background-color: #f0f0f0;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
       background-color: #ffeb3b;
-      padding: 10px 20px;
+      padding: 12px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     h1 {
@@ -33,35 +35,102 @@
     }
 
     main {
-      padding: 20px;
+      padding: 25px 15px;
     }
 
-    .category-box {
-      background-color: #ffffff;
-      border-radius: 5px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 600px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      transition: transform 0.2s;
+    .poem-container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 25px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-left: 6px solid #fdd835;
+      word-wrap: break-word;
     }
 
-    .category-box:hover {
-      transform: scale(1.02);
+    .poem-title {
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .poem-subtitle {
+      font-size: 1.1em;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .poem-line {
+      margin-bottom: 18px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    .bible-verse {
+      font-style: italic;
+      color: #777;
+      margin-top: 25px;
+      font-size: 0.95em;
     }
 
     footer {
       text-align: center;
-      margin-top: 20px;
-      padding: 10px;
+      margin-top: 40px;
+      padding: 20px 10px;
       background-color: #ffeb3b;
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    footer hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      #menu-btn {
+        font-size: 24px;
+      }
+
+      .poem-title {
+        font-size: 1.5em;
+      }
+
+      .poem-line {
+        font-size: 1em;
+      }
+
+      .poem-container {
+        width: 100%;
+        padding: 20px 15px;
+        margin: 20px auto;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Poetry Garden</h1>
     <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
