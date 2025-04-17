@@ -3,83 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About</title>
+  <title>Divine Poems</title>
   <style>
-    :root {
-      --main-color: #ffeb3b;
-      --text-color: #333;
-      --body-bg: #f9f9f9;
-      --box-shadow: rgba(0, 0, 0, 0.2);
-    }
-
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: var(--body-bg);
-      color: var(--text-color);
-    }
-
-    header, footer {
-      background-color: var(--main-color);
-      padding: 15px 20px;
-      text-align: center;
-    }
-
-    header h1, footer h2 {
       margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffeb3b;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
       font-size: 24px;
-      font-weight: bold;
+      margin: 0;
     }
 
-    nav.nav-links {
-      margin-top: 10px;
-    }
-
-    nav.nav-links a {
-      margin: 0 10px;
+    #menu-btn {
+      font-size: 28px;
       text-decoration: none;
-      color: var(--text-color);
-      font-weight: 500;
-      font-size: 15px;
+      color: #000;
     }
 
     main {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
+      padding: 20px;
     }
 
-    h2 {
+    .poem-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 25px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-left: 6px solid #fdd835;
+      word-wrap: break-word;
+    }
+
+    .poem-title {
+      font-size: 1.8em;
       color: #444;
-      margin-top: 30px;
-      font-size: 1.5em;
+      margin-bottom: 15px;
+      font-weight: bold;
     }
 
-    p {
+    .poem-subtitle {
       font-size: 1.1em;
-      line-height: 1.7;
+      color: #777;
+      font-style: italic;
       margin-bottom: 20px;
+    }
+
+    .poem-line {
+      margin-bottom: 18px;
+      font-size: 1.05em;
       color: #555;
     }
 
-    .category-box {
-      background-color: white;
-      border-left: 6px solid #fdd835;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 8px var(--box-shadow);
-      margin: 20px 0;
+    .bible-verse {
+      font-style: italic;
+      color: #777;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 10px;
+      background-color: #ffeb3b;
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    footer hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 10px auto;
     }
 
     @media screen and (max-width: 600px) {
-      nav.nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      h1 {
+        font-size: 20px;
       }
 
-      nav.nav-links a {
-        margin: 5px 0;
+      #menu-btn {
+        font-size: 24px;
+      }
+
+      .poem-title {
+        font-size: 1.5em;
+      }
+
+      .poem-line {
+        font-size: 1em;
+      }
+
+      .poem-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+      }
+
+      main {
+        padding: 20px 10px;
       }
     }
   </style>
@@ -88,16 +131,8 @@
 
   <header>
     <h1>Poetry Garden</h1>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="divine.html">Divine Poems</a>
-      <a href="family.html">Family Poems</a>
-      <a href="special.html">Special Poems</a>
-      <a href="friendship.html">Friendship Poems</a>
-      <a href="random.html">Random Poems</a>
-    </nav>
-  </header>
-
+    <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
+  </header> 
   <main>
     <h2>Hey, I’m Kenzeus Drake</h2>
     <p>A Computer Science graduate turned freelance web and software developer. While I spend most of my time building in the digital world, I created this space to build something a little different: a home for my words.</p>
