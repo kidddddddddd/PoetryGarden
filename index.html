@@ -231,22 +231,6 @@
     };
   </script>
   
-    <!-- Scroll-to-top button -->
-  <button id="scrollToTopBtn" title="Go to top">
-    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
-      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
-    </svg>
-  </button>
-  <script>
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-    window.addEventListener("scroll", () => {
-      scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
-    });
-
-    scrollToTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  </script>
+    
 </body>
 </html>
