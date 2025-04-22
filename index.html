@@ -146,10 +146,10 @@
       <h2>Random Poems</h2>
       <p>Discover something new from our diverse collection of themes.</p>
     </a>
-    
+
     <a href="#" class="category-box KD-ayThoughts" onclick="openPinModal(event)" title="Locked – PIN required">
       <h2 style="display: flex; align-items: center; gap: 8px;">
-        KD-ayThoughts
+        KD-ay Thoughts
         <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" fill="#000">
           <path d="M0 0h24v24H0V0z" fill="none"/>
           <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-6h-1V9a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2zM8 9a4 4 0 0 1 8 0v2H8V9z"/>
@@ -231,5 +231,22 @@
     };
   </script>
   
+    <!-- Scroll-to-top button -->
+  <button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
