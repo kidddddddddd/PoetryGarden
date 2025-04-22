@@ -179,30 +179,41 @@
   </div>
 
   <script>
+    // Check authentication on page load
+    window.onload = function () {
+      sessionStorage.removeItem("authenticated"); // Force re-auth on back navigation
+    };
+  
     function openPinModal(event) {
       event.preventDefault();
-      document.getElementById('pinModal').style.display = 'block';
+      // Only prompt if not authenticated
+      if (!sessionStorage.getItem("authenticated")) {
+        document.getElementById('pinInput').value = '';
+        document.getElementById('pinModal').style.display = 'block';
+      } else {
+        window.location.href = "KD-ayThoughts.html";
+      }
     }
-
+  
     function checkPin() {
       const correctPin = "0425";
       const enteredPin = document.getElementById('pinInput').value;
-
+  
       if (enteredPin === correctPin) {
+        sessionStorage.setItem("authenticated", "true");
         window.location.href = "KD-ayThoughts.html";
       } else {
         document.getElementById('pinModal').style.display = 'none';
         document.getElementById('errorModal').style.display = 'block';
       }
     }
-
+  
     function closeErrorModal() {
       document.getElementById('errorModal').style.display = 'none';
       document.getElementById('pinModal').style.display = 'block';
       document.getElementById('pinInput').value = '';
     }
-
-    // Optional: Close modals by clicking outside
+  
     window.onclick = function(event) {
       if (event.target.classList.contains('modal')) {
         event.target.style.display = 'none';
@@ -210,5 +221,6 @@
       }
     };
   </script>
+  
 </body>
 </html>
