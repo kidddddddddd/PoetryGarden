@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KD-ay Thoughts</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc; /* Beige background */
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #40E0D0; /* Torquiose */
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #menu-btn {
+      font-size: 28px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .poem-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 25px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-left: 6px solid #40E0D0; /* Torquiose */
+      word-wrap: break-word;
+    }
+
+    .poem-title {
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .poem-subtitle {
+      font-size: 1.1em;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .poem-line {
+      margin-bottom: 18px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    .bible-verse {
+      font-style: italic;
+      color: #777;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 10px;
+      background-color: #40E0D0; /* Torquiose */
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    footer hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      #menu-btn {
+        font-size: 24px;
+      }
+
+      .poem-title {
+        font-size: 1.5em;
+      }
+
+      .poem-line {
+        font-size: 1em;
+      }
+
+      .poem-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+    }
+
+    #scrollToTopBtn {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+      }
+
+      #scrollToTopBtn {
+  position: fixed;
+  bottom: 250px; /* Moved higher above the footer */
+  right: 20px;
+  z-index: 1000;
+  background-color: #40E0D0; /* Turquoise */
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTopBtn svg {
+  display: block;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #30bdb7;
+  transform: scale(1.1);
+}
+
+
+      #scrollToTopBtn svg {
+        display: block;
+      }
+
+      #scrollToTopBtn:hover {
+        background-color: #30bdb7;
+        transform: scale(1.1);
+      }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Poetry Garden</h1>
+    <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
+  </header>
+
+  <main>
+
+  </main>
+  
+  <button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+
+  <footer>
+    <h2>Poetry Garden</h2>
+    <p>A heartfelt poetry compilation</p>
+    <hr>
+    <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
+  </footer>
+
+<!-- Scroll-to-top button -->
+
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", () => {
+    scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+  });
+
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+</body>
+</html>

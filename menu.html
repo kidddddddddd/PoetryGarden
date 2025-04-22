@@ -9,7 +9,7 @@
       font-family: 'Times New Roman', Times, serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5dc; /* Beige background */
+      background-color: #f5f5dc;
       color: #000000;
       display: flex;
       flex-direction: column;
@@ -17,7 +17,7 @@
     }
 
     header {
-      background-color: #40E0D0; /* Torquiose */
+      background-color: #40E0D0;
       width: 100%;
       padding: 20px;
       text-align: center;
@@ -39,7 +39,10 @@
     }
 
     a.menu-link {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
       padding: 15px;
       background-color: white;
       border-radius: 8px;
@@ -53,7 +56,16 @@
       animation: slideIn 0.5s forwards;
     }
 
-    /* Animate each menu item with staggered delay */
+    a.menu-link:hover {
+      background-color: #f5f5f5;
+    }
+
+    a.menu-link svg {
+      width: 18px;
+      height: 18px;
+      fill: #333;
+    }
+
     a.menu-link:nth-child(1) { animation-delay: 0.1s; }
     a.menu-link:nth-child(2) { animation-delay: 0.2s; }
     a.menu-link:nth-child(3) { animation-delay: 0.3s; }
@@ -61,6 +73,7 @@
     a.menu-link:nth-child(5) { animation-delay: 0.5s; }
     a.menu-link:nth-child(6) { animation-delay: 0.6s; }
     a.menu-link:nth-child(7) { animation-delay: 0.7s; }
+    a.menu-link:nth-child(8) { animation-delay: 0.8s; }
 
     @keyframes slideIn {
       to {
@@ -69,16 +82,64 @@
       }
     }
 
-    a.menu-link:hover {
-      background-color: #f5f5f5;
-    }
-
     footer {
       margin-top: 40px;
       padding: 10px;
       width: 100%;
-      background-color: #40E0D0; /* Torquiose */
+      background-color: #40E0D0;
       text-align: center;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-content input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .modal-content button {
+      padding: 8px 16px;
+      background-color: #40E0D0;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .modal-content button:hover {
+      background-color: #36c5bc;
+    }
+
+    @media (max-width: 500px) {
+      .modal-content {
+        margin-top: 40%;
+        width: 85%;
+      }
     }
   </style>
 </head>
@@ -94,6 +155,16 @@
     <a class="menu-link" href="special.html">Special Poems</a>
     <a class="menu-link" href="friendship.html">Friendship Poems</a>
     <a class="menu-link" href="random.html">Random Poems</a>
+
+    <!-- Locked KD-ay Thoughts -->
+    <a href="menu-link" class="menu-link" onclick="openPinModal(event)" title="Locked – PIN required">
+      KD-ay Thoughts
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" fill="#000">
+        <path d="M0 0h24v24H0V0z" fill="none"/>
+        <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-6h-1V9a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2zM8 9a4 4 0 0 1 8 0v2H8V9z"/>
+      </svg>
+    </a>
+
     <a class="menu-link" href="about.html">About</a>
   </nav>
 
@@ -103,5 +174,65 @@
     <hr>
     <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
   </footer>
+
+  <!-- PIN Entry Modal -->
+  <div id="pinModal" class="modal">
+    <div class="modal-content">
+      <h2>Enter PIN</h2>
+      <input type="password" id="pinInput" placeholder="Enter six digit pin">
+      <button onclick="checkPin()">Submit</button>
+    </div>
+  </div>
+
+  <!-- Incorrect PIN Modal -->
+  <div id="errorModal" class="modal">
+    <div class="modal-content">
+      <h3>Incorrect PIN</h3>
+      <p>Please try again.</p>
+      <button onclick="closeErrorModal()">Try Again</button>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      sessionStorage.removeItem("authenticated");
+    };
+
+    function openPinModal(event) {
+      event.preventDefault();
+      if (!sessionStorage.getItem("authenticated")) {
+        document.getElementById('pinInput').value = '';
+        document.getElementById('pinModal').style.display = 'block';
+      } else {
+        window.location.href = "KD-ayThoughts.html";
+      }
+    }
+
+    function checkPin() {
+      const correctPin = "325123";
+      const enteredPin = document.getElementById('pinInput').value;
+
+      if (enteredPin === correctPin) {
+        sessionStorage.setItem("authenticated", "true");
+        window.location.href = "KD-ayThoughts.html";
+      } else {
+        document.getElementById('pinModal').style.display = 'none';
+        document.getElementById('errorModal').style.display = 'block';
+      }
+    }
+
+    function closeErrorModal() {
+      document.getElementById('errorModal').style.display = 'none';
+      document.getElementById('pinModal').style.display = 'block';
+      document.getElementById('pinInput').value = '';
+    }
+
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+        document.getElementById('pinInput').value = '';
+      }
+    };
+  </script>
 </body>
 </html>
