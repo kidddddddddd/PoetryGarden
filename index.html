@@ -72,6 +72,10 @@
       background-color: #dff0d8; /* soft green */
     }
 
+    .KD-ayThoughts {
+      background-color: #fce4ec; /* soft pink */
+    }
+
     footer {
       background-color: #40E0D0; /* Torquiose */
       text-align: center;
@@ -107,6 +111,11 @@
       <h2>Random Poems</h2>
       <p>Discover something new from our diverse collection of themes.</p>
     </a>
+    <a href="#" class="category-box KD-ayThoughts" onclick="verifyPin(event)">
+      <h2>KD-ayThoughts</h2>
+      <p>POV, Inside thoughts, Rants, etc.</p>
+    </a>
+
   </main>
 
   <footer>
@@ -115,6 +124,20 @@
     <hr>
     <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
   </footer>
+
+  <script>
+    function verifyPin(event) {
+      event.preventDefault(); // Prevent the default link behavior
+      const correctPin = "0425"; // Set your PIN here
+      const userPin = prompt("Enter PIN to access KD-ayThoughts:");
+
+      if (userPin === correctPin) {
+        window.location.href = "KD-ayThoughts.html";
+      } else if (userPin !== null) {
+        alert("Incorrect PIN. Access denied.");
+      }
+    }
+  </script>
   
 </body>
 </html>
