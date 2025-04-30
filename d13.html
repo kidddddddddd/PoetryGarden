@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divine Poems</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc; /* Beige background */
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #40E0D0; /* Torquiose */
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #menu-btn {
+      font-size: 28px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .poem-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 25px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-left: 6px solid #40E0D0; /* Torquiose */
+      word-wrap: break-word;
+    }
+
+    .poem-title {
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .poem-subtitle {
+      font-size: 1.1em;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .poem-line {
+      margin-bottom: 18px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    .bible-verse {
+      font-style: italic;
+      color: #777;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 10px;
+      background-color: #40E0D0; /* Torquiose */
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    footer hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 16px;
+      color: #4058e0;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .back-home:hover {
+      color: #30bdb7;
+      border-bottom: 2px solid #30bdb7;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      #menu-btn {
+        font-size: 24px;
+      }
+
+      .poem-title {
+        font-size: 1.5em;
+      }
+
+      .poem-line {
+        font-size: 1em;
+      }
+
+      .poem-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+    }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 250px; /* Moved higher above the footer */
+      right: 20px;
+      z-index: 1000;
+      background-color: #40E0D0; /* Turquoise */
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #scrollToTopBtn svg {
+      display: block;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #30bdb7;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Poetry Garden</h1>
+    <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
+  </header> 
+  <main>
+
+    <div class="poem-container">
+        <h2 class="poem-title">Let's Speak Like Jesus</h2>
+        <p class="poem-subtitle">A Reflection on Words that Honor Christ</p>
+      
+        <h3 class="poem-section">Main Verse</h3>
+        <p class="poem-scripture">
+          <em>"Let your conversation be always full of grace, seasoned with salt, so that you may know how to answer everyone."<br>
+          — Colossians 4:6 (NIV)</em>
+        </p>
+      
+        <h3 class="poem-section">Personal Reflection</h3>
+        <p class="poem-line">
+          There was a time I already believed in Jesus.<br>
+          I knew Him.<br>
+          I confessed Him as Lord.<br>
+          But when I looked at my life — especially my words — it didn’t reflect Him.<br><br>
+      
+          I was a trashtalker.<br>
+          Cursing was part of my daily expression.<br>
+          Angry? Curse.<br>
+          Joking? Curse.<br>
+          Annoyed? Curse.<br>
+          Happy? Curse.<br><br>
+      
+          It was automatic — I thought it was just my personality.<br>
+          "This is me. If you don't like it, that's fine."<br><br>
+      
+          I thought that believing in Jesus was enough, even if my speech was still full of pride, anger, and harshness.<br>
+          But deep inside, I felt a gap.<br><br>
+      
+          One day, I talked to someone who said something simple but powerful:<br>
+          She's not used to people cursing and gently reminded me to lessen it.<br><br>
+      
+          At first, I defended myself.<br>
+          I told her, "This is just who I am."<br>
+          But her honesty planted a seed in me.<br>
+          It stayed.<br>
+          It bothered me — in a good way.<br><br>
+      
+          And before I even realized it, change started.<br>
+          One day, instead of a curse word flying out when I was annoyed, I said "unggoy" — a harmless, silly word.<br>
+          I laughed at myself — because I once thought it was impossible to change.<br>
+          But here I was, speaking differently.<br><br>
+      
+          I learned that if you truly want to change, even with obstacles, you will find a way — and God will strengthen you.<br>
+          Change begins in the heart, not the mouth.<br>
+          And if you stand firm in your desire to honor Christ, He will meet you with His grace.
+        </p>
+      
+        <h3 class="poem-section">Related Topics</h3>
+      
+        <h4 class="poem-subsection">1. Speak with Wisdom and Grace</h4>
+        <p class="poem-scripture">
+          <em>"Be wise in the way you act toward outsiders; make the most of every opportunity. Let your conversation be always full of grace, seasoned with salt, so that you may know how to answer everyone."<br>
+          — Colossians 4:5-6 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          Our words are not random.<br>
+          They are opportunities — either to invite people closer to Jesus or push them farther away.<br>
+          When we speak, we are either building bridges or building walls.
+        </p>
+      
+        <h4 class="poem-subsection">2. Avoid Obscene, Foolish, and Dirty Talk</h4>
+        <p class="poem-scripture">
+          <em>"Nor should there be obscenity, foolish talk or coarse joking, which are out of place, but rather thanksgiving."<br>
+          — Ephesians 5:4 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          Many people think dirty jokes and foul language are harmless fun.<br>
+          But in God's eyes, our words should be filled with thankfulness — not foolishness.<br>
+          Even casual words matter to Him.
+        </p>
+      
+        <h4 class="poem-subsection">3. Leave Behind the Old Way of Anger and Cursing</h4>
+        <p class="poem-scripture">
+          <em>"But now you must also rid yourselves of all such things as these: anger, rage, malice, slander, and filthy language from your lips."<br>
+          — Colossians 3:8-9 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          We can't hold onto Jesus with one hand and cling to our old sins with the other.<br>
+          If we belong to Christ, we must let go of what once defined us — including the way we spoke.
+        </p>
+      
+        <h4 class="poem-subsection">4. Put on the New Self in Christ</h4>
+        <p class="poem-scripture">
+          <em>"And have put on the new self, which is being renewed in knowledge in the image of its Creator."<br>
+          — Colossians 3:10 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          Change isn't just behavior modification.<br>
+          It's a renewal — a rebirth into the image of Christ Himself.
+        </p>
+      
+        <h4 class="poem-subsection">5. Let the Holy Spirit Speak Through You</h4>
+        <p class="poem-scripture">
+          <em>"For it will not be you speaking, but the Spirit of your Father speaking through you."<br>
+          — Matthew 10:20 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          When we allow the Holy Spirit to lead us, even our conversations become anointed.<br>
+          Instead of speaking carelessly, we begin to speak with divine purpose.
+        </p>
+      
+        <h4 class="poem-subsection">6. Out of the Overflow of the Heart, the Mouth Speaks</h4>
+        <p class="poem-scripture">
+          <em>"For the mouth speaks what the heart is full of."<br>
+          — Luke 6:45 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          If our words are full of bitterness, anger, pride, or filth,<br>
+          It is only exposing what is hidden in the heart.<br>
+          The real issue isn’t the tongue — it’s the heart.
+        </p>
+      
+        <h4 class="poem-subsection">7. Speak Only What is Helpful and Uplifting</h4>
+        <p class="poem-scripture">
+          <em>"Do not let any unwholesome talk come out of your mouths, but only what is helpful for building others up according to their needs, that it may benefit those who listen."<br>
+          — Ephesians 4:29 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          We are called to be builders, not destroyers.<br>
+          Every word should be a brick that builds others up — not a stone that tears them down.
+        </p>
+      
+        <h4 class="poem-subsection">8. Control the Tongue, Control the Whole Body</h4>
+        <p class="poem-scripture">
+          <em>"Anyone who is never at fault in what they say is perfect, able to keep their whole body in check."<br>
+          — James 3:2 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          Mastering our speech is not a small achievement.<br>
+          It reflects deep maturity and self-control in Christ.
+        </p>
+      
+        <h4 class="poem-subsection">9. Death and Life are in the Power of the Tongue</h4>
+        <p class="poem-scripture">
+          <em>"The tongue has the power of life and death, and those who love it will eat its fruit."<br>
+          — Proverbs 18:21 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          Every time we speak, we are either releasing life or death.<br>
+          There is no neutral ground.<br>
+          Are my words planting life or sowing death?
+        </p>
+      
+        <h4 class="poem-subsection">10. Speak Truth in Love</h4>
+        <p class="poem-scripture">
+          <em>"Instead, speaking the truth in love, we will grow to become in every respect the mature body of him who is the head, that is, Christ."<br>
+          — Ephesians 4:15 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          It’s not enough to just "tell the truth."<br>
+          We must tell the truth in love — with gentleness, kindness, and wisdom, just like Jesus would.
+        </p>
+      
+        <h3 class="poem-section">Realizations</h3>
+        <p class="poem-line">
+          Maybe you already believe in Jesus — but does your speech reflect Him?<br>
+      
+          Maybe you’re kind in actions, but harsh in words — which still hurts others. <br>
+      
+          Maybe you’ve said, "I’m just being real," when in fact you were just being careless.<br>
+      
+          Maybe you never realized how many people you hurt or pushed away with your words — until now.<br>
+      
+          Today is the day to surrender our mouths to God — along with our hearts.
+        </p>
+      
+        <h3 class="poem-section">Lesson Learned</h3>
+        <p class="poem-line">
+          Believing in Jesus means becoming like Jesus.<br>
+          Not just on Sundays.<br>
+          Not just in actions.<br>
+          But even in the words we speak when no one is watching.<br><br>
+          If we love Him, it should show — even in our conversations.
+        </p>
+      
+        <h3 class="poem-section">Conclusion</h3>
+        <p class="poem-line">
+          When people hear you speak,<br>
+          Do they hear the world?<br>
+          Or do they hear Christ?<br><br>
+      
+          Let’s speak life.<br>
+          Let’s speak hope.<br>
+          Let’s speak Jesus.<br><br>
+      
+          Speak like Jesus.<br>
+          Speak life.
+        </p>
+
+        <a href="divine.html" class="back-home">← Back to Home</a>
+      </div>
+  </main>
+
+  <!-- Scroll-to-top button -->
+  <button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+
+  <footer>
+    <h2>Poetry Garden</h2>
+    <p>A heartfelt poetry compilation</p>
+    <hr>
+    <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divine Poems</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc; /* Beige background */
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #40E0D0; /* Torquiose */
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #menu-btn {
+      font-size: 28px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .poem-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 25px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-left: 6px solid #40E0D0; /* Torquiose */
+      word-wrap: break-word;
+    }
+
+    .poem-title {
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .poem-subtitle {
+      font-size: 1.1em;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .poem-line {
+      margin-bottom: 18px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    .bible-verse {
+      font-style: italic;
+      color: #777;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 10px;
+      background-color: #40E0D0; /* Torquiose */
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    footer hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 16px;
+      color: #4058e0;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .back-home:hover {
+      color: #30bdb7;
+      border-bottom: 2px solid #30bdb7;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      #menu-btn {
+        font-size: 24px;
+      }
+
+      .poem-title {
+        font-size: 1.5em;
+      }
+
+      .poem-line {
+        font-size: 1em;
+      }
+
+      .poem-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+    }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 250px; /* Moved higher above the footer */
+      right: 20px;
+      z-index: 1000;
+      background-color: #40E0D0; /* Turquoise */
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #scrollToTopBtn svg {
+      display: block;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #30bdb7;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Poetry Garden</h1>
+    <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
+  </header> 
+  <main>
+    <div class="poem-container">
+        <h2 class="poem-title">“When It Wasn’t God’s Will—It Was Just My Choice”</h2>
+        <p class="poem-subtitle">A Reflective Piece on Free Will, Broken Moments, and Walking Back by Faith</p>
+      
+        <h3 class="poem-section">The Confusion We All Face</h3>
+        <p class="poem-line">
+          You’ve heard it before:<br>
+          "Maybe this is part of God’s will for me."<br>
+          "Maybe God wanted this to happen to me."<br><br>
+          And sometimes, when life gets difficult or when we mess up, we say things like this.<br>
+          It’s an attempt to make sense of our pain, our mistakes, and the chaos that sometimes seems to control us.<br>
+          We think, “Maybe this was meant to be.”<br><br>
+          But what if I told you—not everything that happens is God’s will?<br>
+          What if I told you that God allows us the freedom to choose, and sometimes those choices lead us down painful paths?<br><br>
+          God doesn’t make us choose His way. He gives us free will—the ability to decide for ourselves. And it’s in those choices that we discover who we really are.
+        </p>
+      
+        <h3 class="poem-section">BIBLICAL FOUNDATION: What Does God Really Say?</h3>
+        <p class="poem-line">God’s will is not automatic; we must choose it.</p>
+        <p class="poem-scripture">
+          <em>“Your kingdom come, your will be done, on earth as it is in heaven.”<br>
+          — Matthew 6:10 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          If God’s will automatically happened, Jesus wouldn’t have prayed this.<br>
+          He’s teaching us that God’s will doesn’t always just happen.<br>
+          We are invited into it. We must choose it.<br>
+          This is the power of free will: we get to decide whether or not we’ll align ourselves with God’s purposes.
+        </p>
+      
+        <p class="poem-line">God gives us the power to choose</p>
+        <p class="poem-scripture">
+          <em>“This day I call the heavens and the earth as witnesses… I have set before you life and death, blessings and curses. Now choose life…”<br>
+          — Deuteronomy 30:19 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          The very essence of free will is this: you choose.<br>
+          God presents us with choices in life—life or death, blessings or curses.<br>
+          He tells us the right one to choose, but He doesn’t force it upon us.<br>
+          It’s up to us.
+        </p>
+        <p class="poem-line">
+          Think about it:<br>
+          Every decision you make is a seed you plant, and one day, you’ll reap the harvest.<br>
+          What are you planting today?
+        </p>
+      
+        <p class="poem-line">Our decisions have results</p>
+        <p class="poem-scripture">
+          <em>“Do not be deceived: God cannot be mocked. A man reaps what he sows.”<br>
+          — Galatians 6:7 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          God doesn’t control every moment in our lives.<br>
+          We do. We reap what we sow.<br><br>
+          So ask yourself:<br>
+          What choices have I made that led me to where I am?<br>
+          Are there seeds I planted in anger, bitterness, or fear that I’m now reaping?<br>
+          What do I want to plant today?
+        </p>
+      
+        <p class="poem-line">God never tempts us to sin</p>
+        <p class="poem-scripture">
+          <em>“When tempted, no one should say, ‘God is tempting me.’ For God cannot be tempted by evil, nor does He tempt anyone.”<br>
+          — James 1:13 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          This is the hardest truth to accept, but it’s necessary: God doesn’t make us sin.<br>
+          We are led astray by our own desires, by our own choices.<br>
+          When things go wrong, when we fall into temptation, we can’t say, “God made me do it.”<br>
+          God didn’t will your failure. You did.<br><br>
+          But here’s the real question: Why did you choose that?<br>
+          God gives you freedom to make choices—but that freedom comes with responsibility.
+        </p>
+      
+        <p class="poem-line">God’s Spirit leads us in a different way</p>
+        <p class="poem-scripture">
+          <em>“But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control.”<br>
+          — Galatians 5:22-23 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          When you’re led by God’s Spirit, you will see fruit like self-control, peace, and kindness.<br>
+          If your decisions are filled with anger, violence, fear, or pride, that’s not God’s will.<br>
+          It’s not His Spirit guiding you—it’s your emotions, your flesh, your pain.<br><br>
+          So, when you make a choice in that heated moment, ask:<br>
+          What fruit is this decision bearing?
+        </p>
+      
+        <p class="poem-line">God can redeem our mistakes</p>
+        <p class="poem-scripture">
+          <em>“And we know that in all things God works for the good of those who love Him…”<br>
+          — Romans 8:28 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          Here’s the good news: God doesn’t waste a thing.<br>
+          Even when we mess up, when our free will leads us down a painful road—He’s still with us.<br>
+          He can turn what was meant for harm into something for good.<br>
+          But first, we have to return to Him. We have to choose to surrender our choices to God, no matter how far we’ve strayed.
+        </p>
+      
+        <h3 class="poem-section">PERSONAL REFLECTION: After Obasan Passed-away, I Had a Choice</h3>
+        <p class="poem-line">
+          When my Obasan passed away, the grief hit like a storm.<br>
+          It shook me to my core. For the first time in my life, I faced the loss of someone so close. I questioned everything.<br>
+          "God, why did You let this happen?"<br><br>
+          And in the face of that pain, I had a choice.<br>
+          I could choose to turn to God for comfort, to lean on Him for healing.<br>
+          But I didn’t.<br>
+          Instead, I chose to numb the pain. I sought distractions. I made poor choices. I tried to fill the emptiness with everything but God.<br><br>
+          I told myself, “Maybe God’s will is for me to go through this pain…”<br><br>
+          But as I look back now, I see the truth:<br>
+          That wasn’t God’s will.<br>
+          It was my own decision—my own free will at work.<br>
+          I chose to run from God in my pain, to rely on myself.<br>
+          And that choice hurt me more.
+        </p>
+      
+        <h3 class="poem-section">LIFE EXAMPLE: The Slap That Wasn’t God's Plan</h3>
+        <p class="poem-line">
+          Imagine this:<br>
+          You’re angry. Someone says something that triggers you—something deeply personal, something unfair.<br>
+          You lash out. You slap the person in the heat of the moment.<br><br>
+          In that second, it feels almost right, doesn’t it?<br>
+          You might even think, “Maybe God allowed me to do this to teach me something.”<br><br>
+          But let’s stop for a second.
+        </p>
+        <p class="poem-scripture">
+          <em>“The acts of the flesh are obvious: hatred, discord, fits of rage…”<br>
+          — Galatians 5:19 (NIV)</em>
+        </p>
+        <p class="poem-line">
+          That slap wasn’t God’s will.<br>
+          It was human will—a decision made in the flesh, not the Spirit.<br>
+          You can’t blame God for that.<br><br>
+          But here’s the truth:<br>
+          Even after we make those wrong choices—God still gives us a chance to choose again.<br>
+          He doesn’t hold it against us. He just wants us to return to His peace, to His Spirit.
+        </p>
+      
+        <h3 class="poem-section">THE LESSON: Stop Blaming God for What We Chose</h3>
+        <p class="poem-line">
+          Here’s where we need to reflect:<br>
+          When you mess up, do you own it?<br>
+          Or do you push the blame on God, saying, “It was part of His plan”?<br><br>
+          The reality is, we make decisions every day that shape our lives.<br>
+          And we can’t keep blaming God for what was never His will in the first place.
+        </p>
+      
+        <h3 class="poem-section">CONCLUSION: Walk in Faith, Not in Blame</h3>
+        <p class="poem-line">
+          The beauty of free will is that it’s yours—but it also means that you must take responsibility for it.<br>
+          Every choice you make matters.<br>
+          Every action carries weight.<br><br>
+          Today, I want you to ask yourself:<br>
+          "Am I truly choosing God's way, or am I just letting my emotions lead?"<br>
+          "Am I blaming God for the mess I created, or am I willing to choose His peace again?"<br><br>
+          God has given you the freedom to decide—you get to choose.<br>
+          So, what will you choose today?<br><br>
+          Don’t waste your free will blaming God for what’s been your choice.<br>
+          Instead, choose faith, even after failure.<br>
+          Choose peace, even after anger.<br>
+          Choose healing, even after the hurt.<br><br>
+          And remember, it’s never too late to choose again.
+        </p>
+
+        <a href="divine.html" class="back-home">← Back to Home</a>
+      </div>
+  </main>
+
+  <!-- Scroll-to-top button -->
+  <button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+
+  <footer>
+    <h2>Poetry Garden</h2>
+    <p>A heartfelt poetry compilation</p>
+    <hr>
+    <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divine Poems</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc; /* Beige background */
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #40E0D0; /* Torquiose */
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #menu-btn {
+      font-size: 28px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .poem-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 25px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-left: 6px solid #40E0D0; /* Torquiose */
+      word-wrap: break-word;
+    }
+
+    .poem-title {
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .poem-subtitle {
+      font-size: 1.1em;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .poem-line {
+      margin-bottom: 18px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    .bible-verse {
+      font-style: italic;
+      color: #777;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 10px;
+      background-color: #40E0D0; /* Torquiose */
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    footer hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 16px;
+      color: #4058e0;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .back-home:hover {
+      color: #30bdb7;
+      border-bottom: 2px solid #30bdb7;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      #menu-btn {
+        font-size: 24px;
+      }
+
+      .poem-title {
+        font-size: 1.5em;
+      }
+
+      .poem-line {
+        font-size: 1em;
+      }
+
+      .poem-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+    }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 250px; /* Moved higher above the footer */
+      right: 20px;
+      z-index: 1000;
+      background-color: #40E0D0; /* Turquoise */
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #scrollToTopBtn svg {
+      display: block;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #30bdb7;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Poetry Garden</h1>
+    <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
+  </header> 
+  <main>
+    <div class="poem-container">
+        <h2 class="poem-title">The Rubik’s Cube of Life</h2>
+      
+        <p class="poem-line">Life is like a Rubik’s Cube—<br>
+        Twisted, turned, and sometimes crude.<br>
+        The colors spin, the sides collide,<br>
+        Each move I make, a step I slide.</p>
+      
+        <p class="bible-verse">"For everything there is a season, a time for every activity under heaven."<br>
+        —Ecclesiastes 3:1</p>
+      
+        <p class="poem-line">At times, it feels like all is lost,<br>
+        A tangled mess, no matter the cost.<br>
+        I twist and turn, but nothing fits,<br>
+        A puzzle broken into bits.</p>
+      
+        <p class="poem-line">But in the chaos, I find a truth—<br>
+        Even the mess has its own proof.<br>
+        Each turn, each twist, each move I make,<br>
+        Shapes the path that I must take.</p>
+      
+        <p class="bible-verse">"And we know that in all things God works for the good of those who love him, who have been called according to his purpose."<br>
+        —Romans 8:28</p>
+      
+        <p class="poem-line">Some pieces don't align just right,<br>
+        But with patience, I see the light.<br>
+        Through every wrong, a lesson learned,<br>
+        In every loss, there’s something earned.</p>
+      
+        <p class="bible-verse">"Not only so, but we also glory in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope."<br>
+        —Romans 5:3-4</p>
+      
+        <p class="poem-line">The cube of life may twist again,<br>
+        But through the struggle, I find my zen.<br>
+        For though it's hard to see the way,<br>
+        In time, the pieces will obey.</p>
+      
+        <p class="bible-verse">"The Lord will fulfill his purpose for me; your love, O Lord, endures forever—do not abandon the works of your hands."<br>
+        —Psalm 138:8</p>
+      
+        <p class="poem-line">It’s never perfect, this game I play,<br>
+        But I find the pieces day by day.<br>
+        Life may be a Rubik’s Cube, a test,<br>
+        But I’ll fix myself—putting my soul to rest.</p>
+      
+        <p class="bible-verse">"I can do all things through Christ who gives me strength."<br>
+        —Philippians 4:13</p>
+      
+        <p class="poem-line">Each twist, each turn, a chance to grow,<br>
+        To heal, to change, to let love flow.<br>
+        For in this cube, I see the grace—<br>
+        That even in chaos, I find my place.</p>
+
+        <a href="divine.html" class="back-home">← Back to Home</a>
+      </div>
+  </main>
+
+  <!-- Scroll-to-top button -->
+  <button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+
+  <footer>
+    <h2>Poetry Garden</h2>
+    <p>A heartfelt poetry compilation</p>
+    <hr>
+    <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
