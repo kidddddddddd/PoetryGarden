@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About</title>
+  <title>Divine Poems</title>
   <style>
     body {
       font-family: 'Times New Roman', Times, serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5dc; /* Beige background */
-      color: #000000;
+      background-color: #f5f5dc;
+      color: #000;
       line-height: 1.6;
     }
 
     header {
-      background-color: #40E0D0; /* Torquiose */
+      background-color: #40E0D0;
       padding: 10px 20px;
       display: flex;
       align-items: center;
@@ -37,49 +37,40 @@
       padding: 20px;
     }
 
-    .poem-container {
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      padding: 25px;
-      max-width: 700px;
+    .poem-list-section {
+      background-color: #e0f7fa;
+      padding: 30px 20px;
+      border-radius: 10px;
       margin: 30px auto;
-      border-left: 6px solid #40E0D0; /* Torquiose */
-      word-wrap: break-word;
+      max-width: 800px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    .poem-title {
-      font-size: 1.8em;
-      color: #444;
-      margin-bottom: 15px;
-      font-weight: bold;
+    .poem-list-section h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #00796b;
+      margin-bottom: 25px;
     }
 
-    .poem-subtitle {
+    .poem-link {
+      display: block;
       font-size: 1.1em;
-      color: #777;
-      font-style: italic;
-      margin-bottom: 20px;
+      color: #000;
+      text-decoration: underline;
+      margin-bottom: 12px;
+      padding: 6px 0;
     }
 
-    .poem-line {
-      margin-bottom: 18px;
-      font-size: 1.05em;
-      color: #555;
-    }
-
-    .bible-verse {
-      font-style: italic;
-      color: #777;
-      margin-top: 25px;
-      font-size: 0.95em;
+    .poem-link:hover {
+      color: #00796b;
     }
 
     footer {
       text-align: center;
       margin-top: 40px;
       padding: 20px 10px;
-      background-color: #40E0D0; /* Torquiose */
+      background-color: #40E0D0;
     }
 
     footer h2 {
@@ -99,6 +90,30 @@
       margin: 10px auto;
     }
 
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 250px;
+      right: 20px;
+      z-index: 1000;
+      background-color: #40E0D0;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #scrollToTopBtn svg {
+      display: block;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #30bdb7;
+      transform: scale(1.1);
+    }
+
     @media screen and (max-width: 600px) {
       h1 {
         font-size: 20px;
@@ -108,55 +123,22 @@
         font-size: 24px;
       }
 
-      .poem-title {
-        font-size: 1.5em;
+      .poem-list-section h2 {
+        font-size: 24px;
       }
 
-      .poem-line {
+      .poem-link {
         font-size: 1em;
       }
 
-      .poem-container {
-        padding: 20px 15px;
-        margin: 20px auto;
+      .poem-list-section {
+        padding: 25px 15px;
       }
 
       main {
         padding: 20px 10px;
       }
     }
-
-      #scrollToTopBtn {
-        bottom: 20px;
-        right: 20px;
-        padding: 10px;
-      }
-
-      #scrollToTopBtn {
-  position: fixed;
-  bottom: 250px; /* Moved higher above the footer */
-  right: 20px;
-  z-index: 1000;
-  background-color: #40E0D0; /* Turquoise */
-  border: none;
-  padding: 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-      
-
-      #scrollToTopBtn svg {
-        display: block;
-      }
-
-      #scrollToTopBtn:hover {
-        background-color: #30bdb7;
-        transform: scale(1.1);
-      }
-
   </style>
 </head>
 <body>
@@ -167,195 +149,51 @@
   </header>
 
   <main>
-    <!-- Poem: Throttle Therapy: A Moment of Reflection -->
-    <div class="poem-container">
-      <h2 class="poem-title">Throttle Therapy: A Moment of Reflection</h2>
-  
-      <p class="poem-line">I remember those days—random, yet clear,<br>
-      Throttle therapy, a moment of fear.<br>
-      Rushing, racing, the engine’s roar,<br>
-      Chasing a high that left me wanting more.</p>
-  
-      <p class="poem-line">It felt like freedom, but in truth, a cage,<br>
-      A fleeting escape, yet bound by rage.<br>
-      The speed, the noise, the endless chase,<br>
-      I thought it would fill that empty space.</p>
-  
-      <p class="poem-line">But now, in the stillness, I see the cost—<br>
-      A part of myself I almost lost.<br>
-      Chasing that rush, I lost my way,<br>
-      Forgot who I was, who I am today.</p>
-  
-      <p class="poem-line">I don’t want to go back to that wasted time,<br>
-      The life I lived was a mountain to climb.<br>
-      Each rev of the engine drowned my soul,<br>
-      I thought I was whole, but never felt whole.</p>
-  
-      <p class="poem-line">Now, I stand here, grounded and free,<br>
-      No more chaos to define me.<br>
-      I remember the throttle, but I chose a different course,<br>
-      One that heals, one that draws from a greater source.</p>
-  
-      <p class="poem-line">In my past, there was pain and strife,<br>
-      But I’ve found peace beyond that life.<br>
-      Throttle therapy may have brought me near,<br>
-      But now I know—my true path is clear.</p>
-    </div>
+    <section class="poem-list-section">
+      <h2>Family Poems</h2>
+      <a class="poem-link" href="r1.html">Throttle Theraphy: A Moment of Reflection</a>
+      <a class="poem-link" href="r2.html">When You Choose Someone to Love</a>
+      <a class="poem-link" href="r3.html">Life is Just Too Hard</a>
+      <a class="poem-link" href="r4.html">IDK</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
 
 
-    <!-- Poem: When You Choose Someone to Love -->
-    <div class="poem-container">
-      <h2 class="poem-title">When You Choose Someone to Love</h2>
-
-      <p class="poem-line">Have you ever paused and asked the skies,<br>
-      “Lord, is this love or just disguise?”<br>
-      When someone smiles and makes you glow,<br>
-      Do you ask Him first, or just go with the flow?</p>
-
-      <p class="poem-line">Love is beautiful—yes, it’s true.<br>
-      But have you prayed, “Is this from You?”<br>
-      Or do you dive, head over feet,<br>
-      Without asking if this love is sweet... or sweet deceit?</p>
-
-      <p class="poem-line">Before you give your heart away,<br>
-      Do you kneel down at the end of the day?<br>
-      Do you whisper, “God, if this is right,<br>
-      Please give me peace and clear my sight.”</p>
-
-      <p class="poem-line">When patience fades and tempers rise,<br>
-      Will you still love, or just cut ties?<br>
-      Can you choose someone who stays through pain,<br>
-      Who’ll dance with you in sun and rain?</p>
-
-      <p class="poem-line">Have you asked for someone kind and true—<br>
-      Not just to you, but also to Him too?<br>
-      Someone whose hands will help you pray,<br>
-      Who leads you closer every day?</p>
-
-      <p class="poem-line">Because love isn’t just fireworks and thrill—<br>
-      It’s choosing each other when time stands still.<br>
-      It’s waiting, trusting, learning grace—<br>
-      Finding home in someone’s face.</p>
-
-      <p class="poem-line">So I’ll ask you now, before you start,<br>
-      Have you invited God into your heart?<br>
-      Not just to bless the one you choose—<br>
-      But to teach you love you’ll never lose?</p>
-
-      <p class="poem-line">Stay close to Him—He knows the way.<br>
-      Let Him write your love story today.<br>
-      And when the right one comes along, you’ll see:<br>
-      Love is best when it begins on bended knee.</p>
-  </div>
-  <div class="poem-container">
-    <h2 class="poem-title">Life is Just Too Hard</h2>
-  
-    <p class="poem-line">Life is nothing but struggle<br>
-    And I refuse to believe that<br>
-    There’s beauty in the broken parts<br>
-    Because</p>
-  
-    <p class="poem-line">Hope is a lie we tell ourselves<br>
-    Joy fades too quickly<br>
-    And it’s not true that<br>
-    We grow through what we go through</p>
-  
-    <p class="poem-line">The pain is permanent<br>
-    I’m certain<br>
-    Nothing ever gets better<br>
-    It’s foolish to think</p>
-  
-    <p class="poem-line">There’s strength in suffering<br>
-    I know<br>
-    Darkness wins in the end<br>
-    And no one can convince me that</p>
-  
-    <p class="poem-line">This life is worth it</p>
-  </div>
-  
-  <div class="poem-container" id="idk-poem">
-    <h2 class="poem-title">IDK</h2>
-  
-    <p class="poem-line">
-      What is this stirring in my chest,<br>
-      that wakes me even when I rest?<br>
-      A silent voice, a nameless fire,<br>
-      not quite longing, not desire.
-    </p>
-  
-    <p class="poem-line">
-      Why do I glance, then look away,<br>
-      as if my eyes might go astray?<br>
-      Why does your presence shift the air,<br>
-      like something’s more when you are there?
-    </p>
-  
-    <p class="poem-line">
-      When did the simplest things you do<br>
-      start painting skies in deeper hue?<br>
-      I never meant to feel this way—<br>
-      but feelings bloom, they disobey.
-    </p>
-  
-    <p class="poem-line">
-      Where in my soul does this begin?<br>
-      A thread, a pull, a world within.<br>
-      Not marked by lines or heavy signs,<br>
-      just quiet thoughts between the lines.
-    </p>
-  
-    <p class="poem-line">
-      Who am I in all of this?<br>
-      A drifting echo, hit or miss?<br>
-      The one who cheers but hides the ache,<br>
-      a quiet leaf beneath your wake.
-    </p>
-  
-    <p class="poem-line">
-      How do I hold what has no name?<br>
-      No claim, no voice, no one to blame.<br>
-      Just questions floating in my sea—<br>
-      not asking you, but asking me.
-    </p>
-  
-    <p class="poem-line">
-      I don’t expect, I don’t reveal,<br>
-      I only ask what’s true, what’s real.<br>
-      It isn't loud, but it  exists— <br>
-      I don't know what, <br>
-      But it persists.
-    </p>
-  </div>
-  
+    </section>
+    
   </main>
-  
-   <!-- Scroll-to-top button -->
-<button id="scrollToTopBtn" title="Go to top">
-  <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
-    <path d="M12 4l-8 8h6v8h4v-8h6z"/>
-  </svg>
-</button>
 
+  <button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+
+
+  
   <footer>
     <h2>Poetry Garden</h2>
     <p>A heartfelt poetry compilation</p>
     <hr>
     <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
   </footer>
-  
-  
 
-<script>
-  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-  window.addEventListener("scroll", () => {
-    scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
-  });
+    window.addEventListener("scroll", () => {
+      scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+    });
 
-  scrollToTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 
 </body>
 </html>

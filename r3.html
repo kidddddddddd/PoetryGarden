@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About</title>
+  <title>Random Poems</title>
   <style>
     body {
       font-family: 'Times New Roman', Times, serif;
@@ -44,7 +44,7 @@
       padding: 25px;
       max-width: 700px;
       margin: 30px auto;
-      border-left: 6px solid #fdd835;
+      border-left: 6px solid #40E0D0; /* Torquiose */
       word-wrap: break-word;
     }
 
@@ -99,6 +99,22 @@
       margin: 10px auto;
     }
 
+    .back-home {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 16px;
+      color: #4058e0;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .back-home:hover {
+      color: #30bdb7;
+      border-bottom: 2px solid #30bdb7;
+    }
+
     @media screen and (max-width: 600px) {
       h1 {
         font-size: 20px;
@@ -125,6 +141,30 @@
         padding: 20px 10px;
       }
     }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 250px; /* Moved higher above the footer */
+      right: 20px;
+      z-index: 1000;
+      background-color: #40E0D0; /* Turquoise */
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #scrollToTopBtn svg {
+      display: block;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #30bdb7;
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
@@ -132,31 +172,47 @@
   <header>
     <h1>Poetry Garden</h1>
     <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
-  </header>
-
+  </header> 
   <main>
-    <section id="about-mackie" style="background-color:#e0f7fa; padding: 30px 20px; border-radius: 10px; margin: 30px auto; max-width: 800px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <h2 style="text-align: center; font-size: 28px; color: #00796b; margin-bottom: 20px;">About</h2>
-      <h1>Hey, I’m KD.</h1>
-      <p>
-        I'm a Computer Science graduate turned freelance web and software developer. While I spend most of my time building in the digital world, I created this space to build something more personal—a home for my words.
-      </p>
-      <p>
-        Poetry has always been my way of translating thoughts into meaning and emotions into something tangible. It’s where I feel most free. This page is my canvas, filled with honest reflections, quiet confessions, and moments that matter.
-      </p>
-      <p>
-        To help guide you through, I’ve organized the poems into different categories that reflect the heart behind each piece. Divine Poems explore themes of faith, hope, and spirituality, while Family Poems celebrate bonds that last forever and the deep connections that shape us. Special Poems are dedicated to those who inspire love and admiration, and Friendship Poems honor the joy, trust, and memories we share with the people who walk beside us. And for those looking to stumble across something unexpected, Random Poems offer a space to discover the unfiltered and the in-between.
-      </p>
-      <p>
-        Each poem is a small window into a larger story—sometimes mine, sometimes a feeling we all know. Whether you're here to reflect, to relate, or simply to read something real, I’m glad you’re here.
-      </p>
-      <p>
-        Welcome to my world of words.
-      </p>
-    </section>
+    <div class="poem-container">
+        <h2 class="poem-title">Life is Just Too Hard</h2>
+      
+        <p class="poem-line">Life is nothing but struggle<br>
+        And I refuse to believe that<br>
+        There’s beauty in the broken parts<br>
+        Because</p>
+      
+        <p class="poem-line">Hope is a lie we tell ourselves<br>
+        Joy fades too quickly<br>
+        And it’s not true that<br>
+        We grow through what we go through</p>
+      
+        <p class="poem-line">The pain is permanent<br>
+        I’m certain<br>
+        Nothing ever gets better<br>
+        It’s foolish to think</p>
+      
+        <p class="poem-line">There’s strength in suffering<br>
+        I know<br>
+        Darkness wins in the end<br>
+        And no one can convince me that</p>
+      
+        <p class="poem-line">This life is worth it</p>
+
+        <a href="random.html" class="back-home">← Back to Home</a>
+      </div>
+
+
+
   </main>
-  
-  
+
+  <!-- Scroll-to-top button -->
+  <button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+
   <footer>
     <h2>Poetry Garden</h2>
     <p>A heartfelt poetry compilation</p>
@@ -164,5 +220,16 @@
     <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
   </footer>
 
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
