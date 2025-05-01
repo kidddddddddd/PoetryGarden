@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divine Poems</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc; /* Beige background */
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #40E0D0; /* Torquiose */
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    #menu-btn {
+      font-size: 28px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .poem-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 25px;
+      max-width: 700px;
+      margin: 30px auto;
+      border-left: 6px solid #40E0D0; /* Torquiose */
+      word-wrap: break-word;
+    }
+
+    .poem-title {
+      font-size: 1.8em;
+      color: #444;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .poem-subtitle {
+      font-size: 1.1em;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .poem-line {
+      margin-bottom: 18px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    .bible-verse {
+      font-style: italic;
+      color: #777;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 10px;
+      background-color: #40E0D0; /* Torquiose */
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    footer hr {
+      border: 1px solid #ccc;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 16px;
+      color: #4058e0;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .back-home:hover {
+      color: #30bdb7;
+      border-bottom: 2px solid #30bdb7;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      #menu-btn {
+        font-size: 24px;
+      }
+
+      .poem-title {
+        font-size: 1.5em;
+      }
+
+      .poem-line {
+        font-size: 1em;
+      }
+
+      .poem-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+    }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 250px; /* Moved higher above the footer */
+      right: 20px;
+      z-index: 1000;
+      background-color: #40E0D0; /* Turquoise */
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #scrollToTopBtn svg {
+      display: block;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #30bdb7;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Poetry Garden</h1>
+    <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
+  </header> 
+  <main>
+    <div class="poem-container">
+        <h2 class="poem-title">My Point of View: The Proof They Keep Ignoring</h2>
+      
+        <p class="poem-line">
+          I saw a comment while scrolling on my socmed, “How do you know God is real?” <br>
+          And honestly, I could give them a hundred reasons.
+        </p>
+        <p class="poem-line">
+          But here’s what I really want to say— <br>
+          This is what I believe. <br>
+          This is what I see. <br>
+          This is what makes sense to both my mind and my soul.
+        </p>
+      
+        <h3 class="poem-section">The Universe Had a Beginning—And Beginnings Need a Beginner</h3>
+        <p class="poem-line">
+          Science says the universe began 13.8 billion years ago with the Big Bang. <br>
+          That event was the start of time, space, and matter. <br>
+          But even physicist Stephen Hawking admitted: "The universe has not always existed. It had a beginning."
+        </p>
+        <p class="poem-line">
+          And what causes a beginning? <br>
+          According to the Law of Causality, every effect has a cause. <br>
+          Something can’t come from nothing. <br>
+          And the First Law of Thermodynamics? Energy can’t create itself. It can only be transferred.
+        </p>
+        <p class="poem-line">
+          So how did something come from nothing? <br>
+          Only an eternal, immaterial, powerful force could exist outside time, matter, and space.
+        </p>
+        <p class="poem-scripture">Genesis 1:1 — “In the beginning, God created the heavens and the earth.”</p>
+      
+        <h3 class="poem-section">The Universe Was Fine-Tuned for Life</h3>
+        <p class="poem-line">
+          Scientists call it the Anthropic Principle— <br>
+          The idea that the universe appears deliberately designed for human life.
+        </p>
+        <p class="poem-line">
+          If gravity were slightly weaker, stars couldn’t form. <br>
+          If it were stronger, stars would burn too fast. <br>
+          If the Earth were just a little closer or farther from the sun, we’d freeze or burn. <br>
+          Even the cosmological constant (which controls the expansion of the universe) is so precise, Stephen Weinberg said: <br>
+          "Life as we know it would be impossible if it were off by one part in 10 to the 120th power."
+        </p>
+        <p class="poem-line">That’s not random.</p>
+        <p class="poem-scripture">Isaiah 45:18 — “For this is what the Lord says—He who created the heavens… He did not create it to be empty, but formed it to be inhabited.”</p>
+      
+        <h3 class="poem-section">DNA: The Language of God</h3>
+        <p class="poem-line">
+          Each of our cells carries a DNA code with over 3 billion letters— <br>
+          A biological instruction manual.
+        </p>
+        <p class="poem-line">
+          Francis Collins, the leader of the Human Genome Project and a Christian, said: <br>
+          "DNA is the language of God."
+        </p>
+        <p class="poem-line">
+          Because code requires intelligence. <br>
+          Letters require a writer. <br>
+          Messages need a sender.
+        </p>
+        <p class="poem-scripture">Psalm 139:13-14 — “For you created my inmost being; you knit me together in my mother’s womb… I am fearfully and wonderfully made.”</p>
+        <p class="poem-line">That’s not poetry to me—it’s proof.</p>
+      
+        <h3 class="poem-section">Life Can’t Come from Non-Life</h3>
+        <p class="poem-line">
+          The theory of evolution may explain change over time— <br>
+          but it doesn’t explain how life started.
+        </p>
+        <p class="poem-line">
+          The Miller-Urey experiment tried to recreate early Earth conditions and “spark” life— <br>
+          but it didn’t even come close to creating a living cell.
+        </p>
+        <p class="poem-line">
+          Even atheist scientists now admit: <br>
+          "Abiogenesis (life from non-life) is still one of the biggest mysteries in biology."
+        </p>
+        <p class="poem-scripture">Genesis 2:7 — “Then the Lord God formed a man from the dust of the ground and breathed into his nostrils the breath of life…”</p>
+        <p class="poem-line">Life comes from life— and the Author of life gave it.</p>
+      
+        <h3 class="poem-section">Consciousness, Morality, and Meaning—Where Did They Come From?</h3>
+        <p class="poem-line">
+          We don’t just survive—we think, choose, create, worship. <br>
+          But natural selection doesn’t need art, prayer, or sacrifice to survive. <br>
+          So why do they exist?
+        </p>
+        <p class="poem-line">
+          Why do we hunger for justice, cry at funerals, sing with passion, or question the afterlife?
+        </p>
+        <p class="poem-scripture">Ecclesiastes 3:11 — “He has also set eternity in the human heart…”</p>
+        <p class="poem-line">That’s why nothing in this world fully satisfies— <br> Because I was made for more.</p>
+      
+        <h3 class="poem-section">Morality Isn’t Just a Human Idea—It’s a Divine Signature</h3>
+        <p class="poem-line">
+          If there’s no God, then morality is a cultural invention. <br>
+          But no culture praises cowardice. No tribe admires betrayal.
+        </p>
+        <p class="poem-scripture">Romans 2:15 — “The requirements of the law are written on their hearts, their consciences also bearing witness.”</p>
+        <p class="poem-line">
+          We know some things are objectively wrong. <br>
+          Not because we were taught— <br>
+          But because we were designed that way.
+        </p>
+      
+        <h3 class="poem-section">Even Time Bows to the Eternal</h3>
+        <p class="poem-line">
+          Albert Einstein’s Theory of Relativity showed that time is not absolute. <br>
+          It’s tied to matter and energy. <br>
+          So if the universe had a beginning, time itself had a beginning.
+        </p>
+        <p class="poem-line">
+          That means the Cause of the universe must be timeless.
+        </p>
+        <p class="poem-scripture">Revelation 1:8 — “I am the Alpha and the Omega… who is, and who was, and who is to come.”</p>
+        <p class="poem-line">He’s not bound by time. He holds it in His hands.</p>
+      
+        <h3 class="poem-section">Jesus: The Invisible Made Visible</h3>
+        <p class="poem-line">
+          People say, “Show me God, then I’ll believe.” <br>
+          But He already did.
+        </p>
+        <p class="poem-scripture">John 1:14 — “The Word became flesh and made His dwelling among us.”</p>
+        <p class="poem-line">
+          Jesus healed the sick. He calmed storms. He raised the dead. He forgave sins. <br>
+          And He didn’t just die—He walked out of His own grave.
+        </p>
+        <p class="poem-line">
+          Over 500 eyewitnesses saw Him after the resurrection. <br>
+          And early disciples gave their lives for that truth— <br>
+          Not for a myth. Not for power. <br>
+          But because they saw the Living God.
+        </p>
+      
+        <h3 class="poem-section">The Resurrection Changed History—And Me</h3>
+        <p class="poem-line">
+          If Jesus didn’t rise from the dead, there is no Christianity. <br>
+          But if He did— <br>
+          Then everything He said is true. <br>
+          And that changes everything.
+        </p>
+        <p class="poem-scripture">1 Corinthians 15:14 — “If Christ has not been raised, our preaching is useless and so is your faith.”</p>
+        <p class="poem-line">
+          But the evidence, both historical and spiritual, keeps pointing to one thing: <br>
+          He is alive.
+        </p>
+        <p class="poem-line">
+          And that’s why I believe not just in a God— <br>
+          But in Jesus, the God who came close.
+        </p>
+      
+        <h3 class="poem-section">In the End, I Don’t Just Believe in God—He’s the Reason I Breathe</h3>
+        <p class="poem-line">
+          If there’s no God: <br>
+          There’s no reason for beauty. <br>
+          No foundation for truth. <br>
+          No purpose in suffering. <br>
+          No hope after death.
+        </p>
+        <p class="poem-line">
+          But I believe:
+        </p>
+        <p class="poem-scripture">Acts 17:28 — “For in Him we live and move and have our being.”</p>
+        <p class="poem-line">
+          Every atom, every heartbeat, every moment— <br>
+          it all points back to Him.
+        </p>
+      
+        <h3 class="poem-section">So When They Ask Me: "Where’s the Proof?"</h3>
+        <p class="poem-line">
+          I say: Look at the stars. Look at DNA. Look at the human heart. <br>
+          Look at the empty tomb. Look at the longing in your soul.
+        </p>
+        <p class="poem-line">
+          It all leads to one truth: <br>
+          God is not just real—He is the reason for everything.
+        </p>
+
+
+        <a href="divine.html" class="back-home">← Back to Home</a>
+      </div>
+  </main>
+
+  <!-- Scroll-to-top button -->
+  <button id="scrollToTopBtn" title="Go to top">
+    <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
+
+  <footer>
+    <h2>Poetry Garden</h2>
+    <p>A heartfelt poetry compilation</p>
+    <hr>
+    <p>&copy; 2025 KD Poetry Garden. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      scrollToTopBtn.style.display = (window.scrollY > 300) ? "block" : "none";
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
