@@ -122,11 +122,11 @@
 <body>
   <header>
     <h1>Poetry Garden</h1>
-    <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a>
+    <!-- <a href="menu.html" id="menu-btn" aria-label="Menu">☰</a> -->
   </header>
 
-  <main>
-    <a href="divine.html" class="category-box divine">
+  <!-- <main> -->
+    <!-- <a href="divine.html" class="category-box divine">
       <h2>Divine Poems</h2>
       <p>Inspirational reflections on faith, hope, and spirituality.</p>
     </a>
@@ -156,10 +156,17 @@
         </svg>
       </h2>
       <p>POV, Inside thoughts, Rants, etc. (Locked)</p>
-    </a>
+    </a> -->
+  
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70vh; text-align: center;">
+      <h2 style="font-size: 32px; color: #333;">🚧 Under Maintenance</h2>
+      <p style="font-size: 18px; margin-top: 12px;">
+        This page is temporarily unavailable and will be back until further notice.<br><br>
+        — <em>Jiro</em>
+      </p>
+    </main>
     
-    
-  </main>
+  <!-- </main> -->
 
   <footer>
     <h2>Poetry Garden</h2>
@@ -169,17 +176,17 @@
   </footer>
 
   <!-- PIN Entry Modal -->
-  <div id="pinModal" class="modal">
+  <!-- <div id="pinModal" class="modal">
     <div class="modal-content">
       <h2>Enter PIN</h2>
       <input type="password" id="pinInput" placeholder="Enter six digit pin">
       <br>
       <button onclick="checkPin()">Submit</button>
     </div>
-  </div>
+  </div> -->
 
   <!-- Incorrect PIN Modal -->
-  <div id="errorModal" class="modal">
+  <!-- <div id="errorModal" class="modal">
     <div class="modal-content">
       <h3>Incorrect PIN</h3>
       <p>Please try again.</p>
@@ -187,8 +194,8 @@
     </div>
   </div>
 
-  <script>
-    // Check authentication on page load
+  <script> -->
+    <!-- // Check authentication on page load
     window.onload = function () {
       sessionStorage.removeItem("authenticated"); // Force re-auth on back navigation
     };
@@ -228,7 +235,7 @@
         event.target.style.display = 'none';
         document.getElementById('pinInput').value = '';
       }
-    };
+    }; -->
   </script>
   
     
